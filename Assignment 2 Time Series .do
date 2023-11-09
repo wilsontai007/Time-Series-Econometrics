@@ -19,7 +19,7 @@ gen inflation = d.USACPICORMINMEI
 svar FF growth inflation UNRATE,aeq(A) lags(1 2) nocnsreport nolog esttab svar
 
 
-//Plotting IRF and FEVD
+//Plotting Impulse Response Functions and Forecast Error Variance Decomposition
 irf create svar, set(SVAR,replace) replace
 irf graph sirf, byopts(yrescale)
 irf graph sfevd, byopts(yrescale)
